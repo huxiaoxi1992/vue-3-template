@@ -1,0 +1,68 @@
+{
+  "name": "vue-3-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.8.3",
+    "dayjs": "^1.10.5",
+    "element-plus": "^1.0.2-beta.46",
+    "vue": "^3.0.4",
+    "vue-router": "^4.0.3",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0-beta.1",
+    "@vue/cli-plugin-eslint": "~5.0.0-beta.1",
+    "@vue/cli-service": "~5.0.0-beta.1",
+    "@vue/compiler-sfc": "^3.0.4",
+    "@vue/eslint-config-airbnb": "^5.3.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-plugin-dynamic-import-node": "^2.3.3",
+    "babel-plugin-import": "^1.13.3",
+    "eslint": "^7.20.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-vue": "^7.2.0",
+    "sass": "^1.32.7",
+    "sass-loader": "^11.0.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-recommended",
+      "@vue/airbnb",
+      "prettier",
+      "prettier/vue"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {
+      "vue/no-v-html": "off",
+      "no-console": "off",
+      "no-param-reassign": "off"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "printWidth": 100,
+    "arrowParens": "avoid"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
