@@ -1,4 +1,5 @@
 <template>
+  <img v-for="item in list" :key="item" :src="require(`@/assets/${item.img}`).default" />
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
@@ -6,7 +7,14 @@
   <router-view />
   <el-button>一个按钮</el-button>
 </template>
-
+<script >
+export default {
+  setup() {
+    const list = [{ img: '123.png' }, { img: 'logo.png' }];
+    return { list };
+  },
+};
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

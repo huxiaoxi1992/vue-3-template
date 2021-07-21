@@ -50,7 +50,8 @@
     "rules": {
       "vue/no-v-html": "off",
       "no-console": "off",
-      "no-param-reassign": "off"
+      "no-param-reassign": "off",
+      "global-require": "off"
     }
   },
   "prettier": {
